@@ -29,19 +29,17 @@ $y$是预测标签，$w$是特征权重，$x$是特征，$b$是偏差，$n$是�
 Loss=\frac{1}{2n}\sum(y^{pred}-y^{true})^2
 $$ --> 
 
-<div align="center"><img style="background: white;" src="https://render.githubusercontent.com/render/math?math=Loss%3D%5Cfrac%7B1%7D%7B2n%7D%5Csum(y%5E%7Bpred%7D-y%5E%7Btrue%7D)%5E2"></div>
+<div align="center"><img style="background: white;" src="https://latex.codecogs.com/svg.latex?Loss%3D%5Cfrac%7B1%7D%7B2n%7D%5Csum(y%5E%7Bpred%7D-y%5E%7Btrue%7D)%5E2"></div>
 把之前的式子代入
-<!-- $$
+$$
 Loss=\frac{1}{2n}\sum(wx+b-y^{true})^2
-$$ --> 
-
-<div align="center"><img style="background: white;" src="https://render.githubusercontent.com/render/math?math=Loss%3D%5Cfrac%7B1%7D%7B2n%7D%5Csum(wx%2Bb-y%5E%7Btrue%7D)%5E2"></div>
+$$
 我们的任务就是最小化这个距离，这时候就需要偏导数来改变$w$的值（学习过程），进行优化
 <!-- $$
 \frac{\partial{L}}{\partial{w}}=\frac{1}{n}(wx+b-y^{true})\cdot{w}
 $$ --> 
 
-<div align="center"><img style="background: white;" src="https://render.githubusercontent.com/render/math?math=%5Cfrac%7B%5Cpartial%7BL%7D%7D%7B%5Cpartial%7Bw%7D%7D%3D%5Cfrac%7B1%7D%7Bn%7D(wx%2Bb-y%5E%7Btrue%7D)%5Ccdot%7Bw%7D"></div>
+<div align="center"><img style="background: white;" src="https://latex.codecogs.com/svg.latex?%5Cfrac%7B%5Cpartial%7BL%7D%7D%7B%5Cpartial%7Bw%7D%7D%3D%5Cfrac%7B1%7D%7Bn%7D(wx%2Bb-y%5E%7Btrue%7D)%5Ccdot%7Bw%7D"></div>
 
 $$
 \frac{\partial{L}}{\partial{b}}=\frac{1}{n}(wx+b-y^{true})
