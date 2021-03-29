@@ -35,6 +35,7 @@ $$
 \frac{\partial{L}}{\partial{w}}=\frac{1}{n}(wx+b-y^{true})\cdot{w}
 $$
 
+<img src="http://chart.googleapis.com/chart?cht=tx&chl=\Large x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}" style="border:none;">
 $$
 \frac{\partial{L}}{\partial{b}}=\frac{1}{n}(wx+b-y^{true})
 $$
