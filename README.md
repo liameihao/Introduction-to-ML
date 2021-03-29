@@ -1,12 +1,3 @@
-<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
-<script type="text/x-mathjax-config">
-  MathJax.Hub.Config({
-    tex2jax: {
-      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
-      processEscapes: true
-    }
-  });
-</script>
 # Introduction to ML
 ##  1. 机器学习是什么
 
@@ -41,18 +32,24 @@ $$ -->
 
 <div align="center"><img style="background: white;" src="https://latex.codecogs.com/svg.latex?%5Cfrac%7B%5Cpartial%7BL%7D%7D%7B%5Cpartial%7Bw%7D%7D%3D%5Cfrac%7B1%7D%7Bn%7D(wx%2Bb-y%5E%7Btrue%7D)%5Ccdot%7Bw%7D"></div>
 
-$$
+<!-- $$
 \frac{\partial{L}}{\partial{b}}=\frac{1}{n}(wx+b-y^{true})
-$$
+$$ --> 
+
+<div align="center"><img style="background: white;" src="https://latex.codecogs.com/svg.latex?%5Cfrac%7B%5Cpartial%7BL%7D%7D%7B%5Cpartial%7Bb%7D%7D%3D%5Cfrac%7B1%7D%7Bn%7D(wx%2Bb-y%5E%7Btrue%7D)"></div>
 
 那么对$w$进行更新
-$$
+<!-- $$
 w=w-\frac{\partial{L}}{\partial{w}}
-$$
+$$ --> 
 
-$$
+<div align="center"><img style="background: white;" src="https://latex.codecogs.com/svg.latex?w%3Dw-%5Cfrac%7B%5Cpartial%7BL%7D%7D%7B%5Cpartial%7Bw%7D%7D"></div>
+
+<!-- $$
 b=b-\frac{\partial{L}}{\partial{b}}
-$$
+$$ --> 
+
+<div align="center"><img style="background: white;" src="https://latex.codecogs.com/svg.latex?b%3Db-%5Cfrac%7B%5Cpartial%7BL%7D%7D%7B%5Cpartial%7Bb%7D%7D"></div>
 
 以此类推，直到Loss最小。
 
